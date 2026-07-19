@@ -98,7 +98,7 @@ body {
   margin: 0 0 8px;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: var(--muted);
+  color: var(--white);
   font-weight: 700;
 }
 
