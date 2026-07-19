@@ -107,6 +107,7 @@ h2 {
   margin: 0;
   font-family: Georgia, 'Times New Roman', serif;
   text-transform: uppercase;
+  color: var(--muted);
   letter-spacing: 0.04em;
 }
 
