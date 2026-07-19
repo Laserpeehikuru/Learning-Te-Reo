@@ -207,7 +207,7 @@ h1 {
   margin-right: auto;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--white);
 }
 
 @media (max-width: 760px) {
