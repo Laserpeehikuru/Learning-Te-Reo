@@ -147,7 +147,14 @@ h1 {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13), transparent 26%);
+
+  background:
+    radial-gradient(
+      circle at 70% 20%,
+      rgba(255,255,255,0.45),
+      transparent 35%
+    );
+
   pointer-events: none;
 }
 
@@ -187,7 +194,13 @@ h1 {
 }
 
 .light-card {
-  background: rgba(255,255,255,0.92);
+  background: linear-gradient(
+      135deg,
+      #f8f8f8 0%,
+      var(--muted) 55%,
+      #ffffff 100%
+  );
+
   color: var(--navy);
 }
 
@@ -196,7 +209,11 @@ h1 {
 }
 
 .purple-card {
-  background: linear-gradient(135deg, var(--navy-2), var(--purple));
+  background: linear-gradient(
+      135deg,
+      var(--navy-2),
+      #1f3f8f
+  );
 }
 
 .footer-nav {
