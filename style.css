@@ -204,6 +204,14 @@ h1 {
   color: var(--navy);
 }
 
+.light-card h2 {
+  color: var(--blue);
+}
+
+.light-card p {
+  color: var(--blue);
+}
+
 .dark-card {
   background: linear-gradient(135deg, var(--navy-2), var(--blue));
 }
