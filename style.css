@@ -19,13 +19,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #000;
   color: var(--white);
-  display: grid;
-  place-items: center;
-  padding: 24px;
+
+  padding: 8px;
 }
 
 .site-shell {
-  width: min(1500px, 100%);
+  width: 98%;
+  max-width: 1900px;
+  margin: 0 auto;
   padding: 18px;
   border-radius: 22px;
   border: 1px solid var(--line);
@@ -83,7 +84,7 @@ body {
 
 .hero {
   margin: 18px 0;
-  min-height: 170px;
+  min-height: 260px;
   border-radius: 20px;
   padding: 42px;
   display: flex;
@@ -133,7 +134,7 @@ h1 {
 
 .info-card{
     position:relative;
-    height:280px;
+    min-height: 340px;
     border-radius:28px;
     overflow:hidden;
     border:1px solid var(--line);
