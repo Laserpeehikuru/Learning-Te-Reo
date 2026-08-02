@@ -6,6 +6,7 @@
   --white: #ffffff;
   --soft: #f4f5f7;
   --muted: #a6a6a6;
+  --ocean: #0077BE;
   --line: rgba(255, 255, 255, 0.18);
 }
 
@@ -17,7 +18,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: #000;
+  background: var(--ocean);
   color: var(--white);
 
   padding: 8px;
@@ -25,7 +26,7 @@ body {
 
 .site-shell {
   width: 98%;
-  max-width: 1900px;
+  max-width: 2500px;
   margin: 0 auto;
   padding: 18px;
   border-radius: 22px;
@@ -84,7 +85,7 @@ body {
 
 .hero {
   margin: 18px 0;
-  min-height: 260px;
+  min-height: 300px;
   border-radius: 20px;
   padding: 42px;
   display: flex;
@@ -257,8 +258,16 @@ h1 {
 }
 
 .info-card p {
-  max-width: 280px;
-  line-height: 1.5;
+    max-width: 100%;
+    width: 100%;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    margin-top: 18px;
+    margin-bottom: 0;
+
+    flex-grow: 1;
 }
 
 .learn-btn{
@@ -338,13 +347,13 @@ h1 {
 }
 
 .dark-card {
-  background: linear-gradient(135deg, var(--navy-2), var(--blue));
+  background: linear-gradient(135deg, var(--ocean), var(--blue));
 }
 
 .purple-card {
   background: linear-gradient(
       135deg,
-      var(--navy-2),
+      var(--ocean),
       #1f3f8f
   );
 }
