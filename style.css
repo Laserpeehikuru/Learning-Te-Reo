@@ -1,13 +1,13 @@
 :root {
-  --navy: #061229;
-  --navy-2: #0d1f45;
-  --blue: #002f69;
-  --purple: #353ccd;
-  --white: #ffffff;
-  --soft: #f4f5f7;
-  --muted: #a6a6a6;
-  --ocean: #0077BE;
-  --line: rgba(255, 255, 255, 0.18);
+  --forest:#2E7D32;
+  --emerald:#43A047;
+  --lime:#81C784;
+  --mint:#E8F5E9;
+  --sage:#C8E6C9;
+  --dark:#1B5E20;
+  --gold:#FBC02D;
+  --white:#FFFFFF;
+  --line: rgba(255,255,255,.25);
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--ocean);
+  background: linear-gradient(180deg,#A5D6A7,#81C784,#66BB6A);
   color: var(--white);
 
   padding: 8px;
@@ -31,10 +31,7 @@ body {
   padding: 18px;
   border-radius: 22px;
   border: 1px solid var(--line);
-  background:
-    radial-gradient(circle at 30% 20%, rgba(53, 60, 205, 0.3), transparent 28%),
-    linear-gradient(rgba(6, 18, 41, 0.9), rgba(6, 18, 41, 0.92)),
-    repeating-radial-gradient(circle at center, transparent 0 16px, rgba(255,255,255,0.08) 17px 19px);
+  background: linear-gradient(180deg,#2E7D32,#388E3C,#43A047);
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
 }
 
@@ -92,7 +89,7 @@ body {
   justify-content: space-between;
   gap: 24px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(13,31,69,0.98), rgba(6,18,41,0.9));
+  background: linear-gradient(135deg,#2E7D32,#43A047);
   border: 1px solid var(--line);
 }
 
@@ -328,12 +325,7 @@ h1 {
 }
 
 .light-card {
-  background: linear-gradient(
-      135deg,
-      #f8f8f8 0%,
-      var(--muted) 55%,
-      #ffffff 100%
-  );
+  background:linear-gradient(145deg,#F1F8E9,#E8F5E9,#DCEDC8);
 
   color: var(--navy);
 }
@@ -347,15 +339,11 @@ h1 {
 }
 
 .dark-card {
-  background: linear-gradient(135deg, var(--ocean), var(--blue));
+  background:linear-gradient(145deg,#43A047,#2E7D32);
 }
 
 .purple-card {
-  background: linear-gradient(
-      135deg,
-      var(--ocean),
-      #1f3f8f
-  );
+  background:linear-gradient(145deg,#66BB6A,#388E3C);
 }
 
 .footer-nav {
@@ -435,4 +423,11 @@ h1 {
   .info-card {
     min-height: 210px;
   }
+}
+
+.button,.learn-btn,.arrow{background:#FBC02D !important;color:#1B5E20 !important;}
+.icon{background:#fff;color:#2E7D32;border:none;box-shadow:0 8px 18px rgba(0,0,0,.15);}
+
+html {
+    font-size: 85%;
 }
