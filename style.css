@@ -37,32 +37,65 @@ body {
 
 .top-nav,
 .footer-nav {
-  background: rgba(6, 18, 41, 0.9);
-  border: 1px solid var(--line);
+
+  background: linear-gradient(
+      135deg,
+      #b5e99a 0%,
+      #fcfcfa 35%,
+      #ffffff 60%,
+      #f6f8f2 85%,
+      #b5e99a 100%
+  );
+
+  border: 1px solid rgba(255,255,255,.75);
+
   border-radius: 16px;
+
   padding: 12px;
+
   display: flex;
+
   gap: 12px;
+
   align-items: center;
+
+  box-shadow:
+      0 12px 35px rgba(0,0,0,.12);
 }
 
 .top-nav a,
 .footer-nav a {
-  color: var(--white);
+
+  color: var(--dark);
+
   text-decoration: none;
+
   font-weight: 700;
-  letter-spacing: 0.04em;
+
+  letter-spacing: .04em;
+
   text-transform: uppercase;
-  font-size: 0.82rem;
+
+  font-size: .82rem;
+
   padding: 12px 18px;
+
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08);
+
+  background: rgba(255,255,255,.45);
+
+  transition: .3s;
 }
 
 .top-nav a:hover,
-.footer-nav a:hover,
-.button:hover {
-  transform: translateY(-2px);
+.footer-nav a:hover {
+
+    background: white;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+
 }
 
 .logo {
@@ -325,25 +358,25 @@ h1 {
 }
 
 .light-card {
-  background:linear-gradient(145deg,#F1F8E9,#E8F5E9,#DCEDC8);
+  background:linear-gradient(145deg,#c4e4a1,#E8F5E9,#DCEDC8);
 
-  color: var(--navy);
+  color: var(--dark);
 }
 
 .light-card h2 {
-  color: var(--blue);
+  color: var(--dark);
 }
 
 .light-card p {
-  color: var(--blue);
+  color: var(--dark);
 }
 
 .dark-card {
-  background:linear-gradient(145deg,#43A047,#2E7D32);
+  background:linear-gradient(145deg,#c4e4a1,#E8F5E9,#DCEDC8);
 }
 
 .purple-card {
-  background:linear-gradient(145deg,#66BB6A,#388E3C);
+  background:linear-gradient(145deg,#c4e4a1,#E8F5E9,#DCEDC8);
 }
 
 .footer-nav {
@@ -382,13 +415,13 @@ h1 {
 /* Top two cards */
 .light-card .learn-btn{
     background:#ffffff;
-    color:var(--blue);
+    color:var(--dark);
 }
 
 /* Bottom two cards */
 .dark-card .learn-btn,
 .purple-card .learn-btn{
-    background:var(--blue);
+    background:var(--dark);
     color:#ffffff;
 }
 
