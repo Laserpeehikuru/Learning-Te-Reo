@@ -88,6 +88,8 @@ body {
 }
 
 .top-nav a:hover,
+
+
 .footer-nav a:hover {
 
     background: white;
@@ -1234,3 +1236,14 @@ font-size: 1rem;
 }
 
 }
+.top-nav a:not(.logo) {
+    width: 100px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+}:not(.logo)
