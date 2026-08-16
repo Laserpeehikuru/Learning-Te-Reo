@@ -1854,3 +1854,211 @@ font-size: 1rem;
     }
 
 }
+
+/* =====================================================
+   NUMBERS LESSON
+   ===================================================== */
+
+.numbers-section {
+    margin: 35px 0;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.number-card {
+    min-height: 300px;
+    padding: 25px;
+    border-radius: 24px;
+    position: relative;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #C8E6C9,
+            #E8F5E9,
+            #DCEDC8
+        );
+
+    color: #1B5E20;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.16);
+
+    transition: .35s;
+}
+
+.number-card:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 25px 45px rgba(0,0,0,.25);
+}
+
+.number-count {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    font-size: .7rem;
+    font-weight: 800;
+
+    color: #43A047;
+}
+
+.big-number {
+    width: 100px;
+    height: 100px;
+
+    margin: 20px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #2E7D32;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 3rem;
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.12);
+}
+
+.number-card h3 {
+    margin: 5px 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1.8rem;
+
+    color: #1B5E20;
+}
+
+.number-card p {
+    margin: 5px 0 18px;
+
+    color: #43A047;
+
+    font-weight: 700;
+}
+
+.number-card .pronounce-btn {
+    margin-top: 5px;
+}
+
+
+/* Counting practice */
+
+.counting-section {
+    margin: 35px 0;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2E7D32,
+            #43A047
+        );
+}
+
+.counting-content h2 {
+    margin: 0;
+
+    font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.counting-content > p:not(.learning-eyebrow) {
+    color: #E8F5E9;
+
+    line-height: 1.7;
+}
+
+.counting-display {
+    padding: 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.12);
+
+    border: 1px solid rgba(255,255,255,.2);
+
+    line-height: 2.5;
+}
+
+.counting-display span {
+    display: inline-flex;
+
+    width: 45px;
+    height: 45px;
+
+    margin: 5px;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #FBC02D;
+
+    color: #1B5E20;
+
+    font-weight: 900;
+}
+
+
+/* Numbers mobile */
+
+@media (max-width: 1000px) {
+
+    .numbers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .numbers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counting-section {
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
