@@ -1958,6 +1958,248 @@ font-size: 1rem;
     margin-top: 5px;
 }
 
+<!-- Counting In Tens -->
+
+<section class="tens-section">
+
+  <div class="section-heading">
+
+    <p>TEKAU</p>
+
+    <h2>Counting In Tens</h2>
+
+    <span>
+      Practise counting from ten to one hundred.
+    </span>
+
+  </div>
+
+
+  <div class="tens-grid">
+
+
+    <!-- 10 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        10
+      </div>
+
+      <h3>
+        Tekau
+      </h3>
+
+      <p>
+        Ten
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 20 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        20
+      </div>
+
+      <h3>
+        Rua tekau
+      </h3>
+
+      <p>
+        Twenty
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 30 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        30
+      </div>
+
+      <h3>
+        Toru tekau
+      </h3>
+
+      <p>
+        Thirty
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 40 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        40
+      </div>
+
+      <h3>
+        Whā tekau
+      </h3>
+
+      <p>
+        Forty
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 50 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        50
+      </div>
+
+      <h3>
+        Rima tekau
+      </h3>
+
+      <p>
+        Fifty
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 60 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        60
+      </div>
+
+      <h3>
+        Ono tekau
+      </h3>
+
+      <p>
+        Sixty
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 70 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        70
+      </div>
+
+      <h3>
+        Whitu tekau
+      </h3>
+
+      <p>
+        Seventy
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 80 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        80
+      </div>
+
+      <h3>
+        Waru tekau
+      </h3>
+
+      <p>
+        Eighty
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 90 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        90
+      </div>
+
+      <h3>
+        Iwa tekau
+      </h3>
+
+      <p>
+        Ninety
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+
+    <!-- 100 -->
+    <article class="ten-card">
+
+      <div class="ten-number">
+        100
+      </div>
+
+      <h3>
+        Kotahi rau
+      </h3>
+
+      <p>
+        One hundred
+      </p>
+
+      <button class="pronounce-btn" type="button">
+        🔊 Hear it
+      </button>
+
+    </article>
+
+  </div>
+
+</section>
 
 /* Counting practice */
 
@@ -2058,6 +2300,147 @@ font-size: 1rem;
 @media (max-width: 430px) {
 
     .numbers-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   NUMBERS 11–20
+   ===================================================== */
+
+.numbers-next-heading {
+    margin-top: 55px;
+}
+
+
+/* =====================================================
+   COUNTING IN TENS
+   ===================================================== */
+
+.tens-section {
+    margin: 55px 0;
+}
+
+.tens-grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+}
+
+.ten-card {
+    min-height: 260px;
+
+    padding: 25px;
+
+    border-radius: 24px;
+
+    position: relative;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #E8F5E9,
+            #C8E6C9,
+            #DCEDC8
+        );
+
+    color: #1B5E20;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.16);
+
+    transition: .35s;
+}
+
+.ten-card:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 25px 45px rgba(0,0,0,.25);
+}
+
+
+.ten-number {
+    width: 90px;
+    height: 90px;
+
+    margin: 10px auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #2E7D32;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 2.3rem;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.12);
+}
+
+
+.ten-card h3 {
+    margin: 5px 0;
+
+    font-family: Georgia, 'Times New Roman', serif;
+
+    font-size: 1.55rem;
+
+    color: #1B5E20;
+}
+
+
+.ten-card p {
+    margin: 5px 0 18px;
+
+    color: #43A047;
+
+    font-weight: 700;
+}
+
+
+.ten-card .pronounce-btn {
+    margin-top: 5px;
+}
+
+/* =====================================================
+   NUMBERS + TENS RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .tens-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .tens-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .tens-grid {
         grid-template-columns: 1fr;
     }
 
@@ -3761,6 +4144,206 @@ font-size: 1rem;
 
         grid-template-columns:
             repeat(3, 1fr);
+
+    }
+
+}
+
+/* =====================================================
+   A HA KA MA INTRODUCTION
+   ===================================================== */
+
+.haka-introduction {
+
+    margin: 40px 0;
+
+    padding: 40px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #C8E6C9,
+            #E8F5E9,
+            #DCEDC8
+        );
+
+    color: #1B5E20;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.14);
+
+}
+
+
+.haka-intro-text {
+
+    max-width: 850px;
+
+    margin: 20px auto 30px;
+
+    text-align: center;
+
+    line-height: 1.7;
+
+}
+
+
+.haka-intro-text p {
+
+    margin: 8px 0;
+
+}
+
+
+/* Sound sequence */
+
+.haka-sequence {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+
+.haka-tile {
+
+    min-width: 70px;
+
+    min-height: 70px;
+
+    padding: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: #2E7D32;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif;
+
+    font-size: 1.25rem;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.15);
+
+    transition: .3s;
+
+}
+
+
+.haka-tile:hover {
+
+    transform:
+        translateY(-6px)
+        scale(1.08);
+
+    background: #FBC02D;
+
+    color: #1B5E20;
+
+}
+
+
+.haka-sequence > span {
+
+    color: #43A047;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+
+}
+
+
+/* Practice reminder */
+
+.haka-tip {
+
+    margin-top: 30px;
+
+    padding: 18px 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.10);
+
+}
+
+
+.haka-tip span {
+
+    font-size: 1.5rem;
+
+}
+
+
+.haka-tip p {
+
+    margin: 0;
+
+    color: #1B5E20;
+
+    line-height: 1.5;
+
+}
+
+
+@media (max-width: 700px) {
+
+    .haka-introduction {
+
+        padding: 28px;
+
+    }
+
+    .haka-sequence {
+
+        gap: 6px;
+
+    }
+
+    .haka-sequence > span {
+
+        display: none;
+
+    }
+
+    .haka-tile {
+
+        min-width: 65px;
+
+        min-height: 65px;
 
     }
 
