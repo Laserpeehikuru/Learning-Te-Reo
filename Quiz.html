@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Te Reo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Te Reo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 
@@ -20,16 +20,249 @@
       <a href="Quiz.html">Quiz</a>
       <a class="nav-pill" href="#korero">Kōrero</a>
     </nav>
-        
-    
-    
+
+
+    <!-- Quiz Hero -->
     <section class="hero">
+
       <div>
-        <h1 class="eyebrow">Test Yourself</h1>
-        <h2>Whakamātauhia tōumātanga</h2>
+
+        <p class="learning-eyebrow">
+          WHAKAMĀTAU
+        </p>
+
+        <h1>
+          Test Yourself
+        </h1>
+
+        <h2>
+          Whakamātauhia tō mātauranga
+        </h2>
+
       </div>
-      <a class="button" href="#learning">Explore More</a>
+
+      <a class="button" href="#quiz">
+        Start Quiz
+      </a>
+
     </section>
-    
+
+<!-- Quiz Section -->
+<section id="quiz" class="quiz-section">
+
+  <!-- Quiz Introduction -->
+  <div id="quiz-start" class="quiz-card quiz-intro-card">
+
+    <div class="quiz-icon">
+      ?
+    </div>
+
+    <p class="learning-eyebrow">
+      WHAKAMĀTAU
+    </p>
+
+    <h2>
+      Ready To Test Yourself?
+    </h2>
+
+    <p>
+      Test what you have learned about Te Reo Māori.
+      You will be asked questions about greetings, numbers,
+      colours, days, months and pronunciation.
+    </p>
+
+    <button id="startQuizBtn" class="quiz-button">
+      Start Quiz →
+    </button>
+
+  </div>
+
+
+  <!-- Actual Quiz -->
+  <div id="quiz-container" class="quiz-card hidden">
+
+    <!-- Question Progress -->
+    <div class="quiz-top">
+
+      <p id="question-number">
+        Question 1 of 10
+      </p>
+
+      <div class="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+
+    </div>
+
+
+    <!-- Question -->
+    <div class="question-area">
+
+      <p class="quiz-category" id="quiz-category">
+        GREETINGS
+      </p>
+
+      <h2 id="question">
+        Question goes here
+      </h2>
+
+    </div>
+
+
+    <!-- Answers -->
+    <div class="answer-grid">
+
+      <button class="answer-btn" data-answer="A">
+
+        <span class="answer-letter">
+          A
+        </span>
+
+        <span id="answerA">
+          Answer A
+        </span>
+
+      </button>
+
+
+      <button class="answer-btn" data-answer="B">
+
+        <span class="answer-letter">
+          B
+        </span>
+
+        <span id="answerB">
+          Answer B
+        </span>
+
+      </button>
+
+
+      <button class="answer-btn" data-answer="C">
+
+        <span class="answer-letter">
+          C
+        </span>
+
+        <span id="answerC">
+          Answer C
+        </span>
+
+      </button>
+
+
+      <button class="answer-btn" data-answer="D">
+
+        <span class="answer-letter">
+          D
+        </span>
+
+        <span id="answerD">
+          Answer D
+        </span>
+
+      </button>
+
+    </div>
+
+
+    <!-- Feedback -->
+    <div id="feedback" class="quiz-feedback hidden">
+
+      <h3 id="feedback-title">
+        Ka pai!
+      </h3>
+
+      <p id="feedback-text">
+        Great job!
+      </p>
+
+    </div>
+
+
+    <!-- Next Question -->
+    <button id="nextBtn" class="quiz-button next-button hidden">
+      Next Question →
+    </button>
+
+  </div>
+
+
+  <!-- Results -->
+  <div id="quiz-results" class="quiz-card results-card hidden">
+
+    <div class="quiz-icon">
+      ★
+    </div>
+
+    <p class="learning-eyebrow">
+      KUA MUTU
+    </p>
+
+    <h2>
+      Quiz Complete!
+    </h2>
+
+    <p>
+      Ka pai! You have finished the quiz.
+    </p>
+
+
+    <div class="final-score">
+
+      <span id="score">
+        0
+      </span>
+
+      <span>
+        /
+      </span>
+
+      <span>
+        10
+      </span>
+
+    </div>
+
+
+    <p id="score-message">
+      Keep practising and have another go!
+    </p>
+
+
+    <button id="restartBtn" class="quiz-button">
+      Try Again →
+    </button>
+
+  </div>
+
+</section>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-nav">
+
+      <span>Pōtahi</span>
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a href="learning.html">
+        Learning
+      </a>
+
+      <a href="Quiz.html">
+        Quiz
+      </a>
+
+    </footer>
+
+  </main>
+  <script src="script.js"></script>
+
 </body>
+
 </html>
