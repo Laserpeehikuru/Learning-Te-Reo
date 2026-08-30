@@ -100,15 +100,9 @@ body {
 
 }
 
-.logo {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 50% !important;
-  padding: 0 !important;
-  font-family: Georgia, serif;
-  font-size: 1.2rem !important;
+.top-nav img {
+    width: 77px;
+    height: 51px;
 }
 
 .nav-pill {
