@@ -157,22 +157,23 @@ h1 {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
 }
 
+.info-card{
+    position:relative;
+    min-height: 340px;
+    border-radius:28px;
+    overflow:hidden;
+    border:1px solid var(--line);
 
-.info-card {
-    position: relative;
-    min-height: 360px;
-    border-radius: 28px;
-    overflow: hidden;
-    border: 1px solid var(--line);
-    cursor: pointer;
-    transition: .45s;
-    transform-style: preserve-3d;
+    cursor:pointer;
+
+    transition:.45s;
+
+    transform-style:preserve-3d;
 }
-
 
 .info-card:hover{
     transform:translateY(-12px) scale(1.03);
@@ -180,18 +181,23 @@ h1 {
     box-shadow:0 30px 60px rgba(0,0,0,.35);
 }
 
-
 .card-front,
-.card-back {
-    position: absolute;
-    inset: 0;
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: .45s;
-}
+.card-back{
 
+    position:absolute;
+
+    inset:0;
+
+    padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    transition:.45s;
+}
 
 .card-front{
 
@@ -274,26 +280,23 @@ h1 {
   pointer-events: none;
 }
 
-
 .info-card h2 {
-    font-size: clamp(1.8rem, 2.4vw, 2.8rem);
-    line-height: 1.05;
-    max-width: 15ch;
+  font-size: clamp(1.6rem, 3vw, 2.6rem);
+  max-width: 11ch;
 }
-
-
 
 .info-card p {
     max-width: 100%;
     width: 100%;
-    font-size: 1rem;
-    line-height: 1.45;
-    margin-top: 14px;
+
+    font-size: 1.05rem;
+    line-height: 1.8;
+
+    margin-top: 18px;
     margin-bottom: 0;
-    
+
     flex-grow: 1;
 }
-
 
 .icon{
     width:80px;
@@ -412,25 +415,14 @@ h1 {
     align-items: flex-start;
   }
 
-
-.card-grid {
+  .card-grid {
     grid-template-columns: 1fr;
-}
+  }
 
-.info-card {
-    min-height: 280px;
+  .info-card {
+    min-height: 210px;
+  }
 }
-
-.card-front,
-.card-back {
-    padding: 24px;
-}
-
-.info-card h2 {
-    font-size: clamp(1.6rem, 5vw, 2.2rem);
-    max-width: 15ch;
-}
-
 
 .button,.learn-btn,.arrow{background:#FBC02D !important;color:#1B5E20 !important;}
 .icon{background:#fff;color:#2E7D32;border:none;box-shadow:0 8px 18px rgba(0,0,0,.15);}
